@@ -5,21 +5,17 @@ Multiple file upload using PHP
 
 Installation
 --------------
+<<<<<<< HEAD
 Download [archive] and unzip in your library folder
 
 Insert code
+=======
+Download and unzip [archive]
+
+>>>>>>> parent of 11c93bb... edit
 ```sh
-/*
-    Include Uplodius
-*/
-
-include 'lib/uplodius.php';
-
-/*
-    Initialization Uplodius
-*/
-
 $Uplodius = new Uplodius;
+<<<<<<< HEAD
 
 /*
     Run Uplodius
@@ -30,6 +26,9 @@ $Uplodius = new Uplodius;
     ["new_file_name"]=> 'awesome_file_uploader_540e034e38d33.jpg'
 */
 
+=======
+		
+>>>>>>> parent of 11c93bb... edit
 $result = $Uplodius->Upload(
 		$_FILES['files'],
 			(object) array(

@@ -15,7 +15,7 @@
 			$_FILES['files'],
 			(object) array(
 				'dir' 			=> '../upload/',
-				'name' 			=> 'awesome_file_uploader',
+				'name' 			=> $structure['path'],
 				'width' 		=> 800,
 				'height' 		=> 0,
 				'prevWidth' 	=> 200,

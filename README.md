@@ -5,7 +5,7 @@ Multiple file upload using PHP
 
 Installation
 --------------
-Download and unzip archive
+Download and unzip [archive]
 
 ```sh
 $Uplodius = new Uplodius;
@@ -22,3 +22,5 @@ $result = $Uplodius->Upload(
 		)
 );
 ```
+
+[archive]:https://github.com/RDmitriev/Uplodius/archive/master.zip

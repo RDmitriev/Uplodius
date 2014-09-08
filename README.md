@@ -7,8 +7,7 @@ Installation
 --------------
 Download [archive] and unzip in your library folder
 
-include 'lib/uplodius.php';
-
+Insert code
 ```sh
 /*
     Include Uplodius
@@ -23,7 +22,7 @@ include 'lib/uplodius.php';
 $Uplodius = new Uplodius;
 
 /*
-    Rund Uplodius
+    Run Uplodius
     Result return array, if your images upload fine $result return:
     
     ["status"]=> true

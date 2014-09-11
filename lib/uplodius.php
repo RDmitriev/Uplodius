@@ -41,6 +41,15 @@
 		{
 			$result = array();
 			
+			if(!is_array($array['name']))
+			{
+				$array_new = array();
+				
+				foreach($array as $key => $val) $array_new[$key][] = $val;
+				
+				$array = $array_new;
+			}
+			
 			foreach($array as $key1 => $value1)
 			foreach($value1 as $key2 => $value2)
 			$result[$key2][$key1] = $value2;
@@ -98,7 +107,14 @@
 							'tmp_name' => $prev_img_output
 						);
 						
-						$files[$key]['preview'] = $this->uploadImage($file_path_prev_array, $prev_img_output, $param->prevWidth, $param->prevHeight) ? true : false;
+						if($this->uploadImage($file_path_prev_array, $prev_img_output, $param->prevWidth, $param->prevHeight))
+						{
+							$files[$key]['preview'] = true;
+						}
+						else
+						{
+							$files[$key]['preview'] = false;
+						}
 					}
 					else
 					{
@@ -164,7 +180,7 @@
 			{
 				imagegif($dst, $img_input['tmp_name'], 90);
 			}
-				
+			
 			imagedestroy($src);
 			
 			if (move_uploaded_file($img_input['tmp_name'], $img_output))
@@ -175,8 +191,6 @@
 			{
 				return false;
 			}
-			
-			return $files;
 		}
 	}
 ?>

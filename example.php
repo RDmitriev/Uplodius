@@ -16,7 +16,7 @@
 			(object) array(
 				'dir' 			=> '../upload/',
 				'name' 			=> $structure['path'],
-				'width' 		=> 800,
+				'width' 		=> 1000,
 				'height' 		=> 0,
 				'prevWidth' 	=> 200,
 				'prevHeight' 	=> 0

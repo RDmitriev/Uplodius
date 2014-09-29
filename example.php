@@ -15,7 +15,7 @@
 			$_FILES['files'],
 			(object) array(
 				'dir' 			=> '../upload/',
-				'name' 			=> $structure['path'],
+				'name' 			=> 'example',
 				'width' 		=> 1000,
 				'height' 		=> 0,
 				'prevWidth' 	=> 200,
@@ -29,5 +29,5 @@
 <h1>Upload images</h1>
 <form method="post" enctype="multipart/form-data" class="form">
 	<input type="file" name="files[]" multiple="multiple">
-	<input type="submit" name="images_add" value="Загрузить">
+	<input type="submit" name="images_add" value="Upload">
 </form>

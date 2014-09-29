@@ -38,7 +38,7 @@ $result = $Uplodius->Upload(
 			'width' 		=> 800,
 			'height' 		=> 0,
 			'prevWidth' 	=> 200,
-				'prevHeight' 	=> 0
+			'prevHeight' 	=> 0
 		)
 );
 ```

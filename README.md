@@ -34,7 +34,7 @@ $result = $Uplodius->Upload(
 		$_FILES['files'],
 			(object) array(
 			'dir' 			=> 'upload/',
-			'prefix' 		=> 'awesome_upload',
+			'prefix' 		=> 'example',
 			'width' 		=> 800,
 			'height' 		=> 0,
 			'prevWidth' 	=> 200,
